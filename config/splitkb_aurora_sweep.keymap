@@ -91,7 +91,7 @@
 
 #define HOST_OS 1
 #include "helper.h"
-#include "unicode-chars/german.dtsi"
+#include "german.dtsi"
 
 #define DEFAULT 0
 #define SYM 1
