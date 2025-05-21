@@ -6,7 +6,10 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
+
+#define HOST_OS 1
+#include "helper.h"
+#include "german.dtsi"
 
 #define ___ &none
 
@@ -78,11 +81,15 @@
             bindings = <&kp Q>, <&kp ESC>;
         };
 
+    tddollar: tap_dance_dollar {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <50>;
+            bindings = <&kp DOLLAR>, <&de_euro>;
+        };
+
 };
 
-#define HOST_OS 1
-#include "helper.h"
-#include "german.dtsi"
 
 #define DEFAULT 0
 #define SYM 1
