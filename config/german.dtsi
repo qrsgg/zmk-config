@@ -33,7 +33,7 @@
          tap-ms = <40>;
          bindings = <
          &macro_press   &kp LCTRL &kp LSHIFT
-         &macro_tap     &kp U &kp 0 &kp 0 &kp FC        // U+00FC
+         &macro_tap     &kp U &kp 0 &kp 0 &kp F &kp C        // U+00FC
          &macro_release &kp LCTRL &kp LSHIFT
          &kp ENTER
          >;
@@ -46,7 +46,7 @@
          tap-ms = <40>;
          bindings = <
          &macro_press   &kp LCTRL &kp LSHIFT
-         &macro_tap     &kp U &kp 0 &kp 0 &kp DF        // U+00DF
+         &macro_tap     &kp U &kp 0 &kp 0 &kp D &kp F        // U+00DF
          &macro_release &kp LCTRL &kp LSHIFT
          &kp ENTER
          >;
