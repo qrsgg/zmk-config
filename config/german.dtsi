@@ -3,11 +3,12 @@
       de_ae: unicode_ae {
          compatible = "zmk,behavior-macro";
          label = "ä";
+         #binding-cells = <0>;
          wait-ms = <40>;
          tap-ms = <40>;
          bindings = <
          &macro_press   &kp LCTRL &kp LSHIFT
-         &macro_tap     &kp U &kp 0 &kp 0 &kp E &kp 4  // U+00E4
+         &macro_tap     &kp U &kp N0 &kp N0 &kp E &kp N4
          &macro_release &kp LCTRL &kp LSHIFT
          &kp ENTER
          >;
@@ -16,11 +17,12 @@
       de_oe: unicode_oe {
          compatible = "zmk,behavior-macro";
          label = "ö";
+         #binding-cells = <0>;
          wait-ms = <40>;
          tap-ms = <40>;
          bindings = <
          &macro_press   &kp LCTRL &kp LSHIFT
-         &macro_tap     &kp U &kp 0 &kp 0 &kp F &kp 6  // U+00F6
+         &macro_tap     &kp U &kp N0 &kp N0 &kp F &kp N6
          &macro_release &kp LCTRL &kp LSHIFT
          &kp ENTER
          >;
@@ -29,11 +31,12 @@
       de_ue: unicode_ue {
          compatible = "zmk,behavior-macro";
          label = "ü";
+         #binding-cells = <0>;
          wait-ms = <40>;
          tap-ms = <40>;
          bindings = <
          &macro_press   &kp LCTRL &kp LSHIFT
-         &macro_tap     &kp U &kp 0 &kp 0 &kp F &kp C        // U+00FC
+         &macro_tap     &kp U &kp N0 &kp N0 &kp F &kp C
          &macro_release &kp LCTRL &kp LSHIFT
          &kp ENTER
          >;
@@ -42,11 +45,12 @@
       de_eszett: unicode_sz {
          compatible = "zmk,behavior-macro";
          label = "ß";
+         #binding-cells = <0>;
          wait-ms = <40>;
          tap-ms = <40>;
          bindings = <
          &macro_press   &kp LCTRL &kp LSHIFT
-         &macro_tap     &kp U &kp 0 &kp 0 &kp D &kp F        // U+00DF
+         &macro_tap     &kp U &kp N0 &kp N0 &kp D &kp F
          &macro_release &kp LCTRL &kp LSHIFT
          &kp ENTER
          >;
@@ -55,11 +59,12 @@
       de_euro: unicode_euro {
          compatible = "zmk,behavior-macro";
          label = "€";
+         #binding-cells = <0>;
          wait-ms = <40>;
          tap-ms = <40>;
          bindings = <
          &macro_press   &kp LCTRL &kp LSHIFT
-         &macro_tap     &kp U &kp 2 &kp 0 &kp A &kp C     // U+20AC
+         &macro_tap     &kp U &kp N2 &kp N0 &kp A &kp C
          &macro_release &kp LCTRL &kp LSHIFT
          &kp ENTER
          >;
