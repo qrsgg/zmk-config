@@ -49,28 +49,28 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <50>;
-            bindings = <&kp A>, ___, <&kp de_ae>;
+            bindings = <&kp A>, <&kp de_ae>;
         };
 
     tdu: tap_dance_u {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <50>;
-            bindings = <&kp U>, ___, <&kp de_ue>;
+            bindings = <&kp U>, <&kp de_ue>;
         };
 
     tdo: tap_dance_o {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <50>;
-            bindings = <&kp O>, ___, <&kp de_oe>;
+            bindings = <&kp O>, <&kp de_oe>;
         };
 
     tdz: tap_dance_z {
                 compatible = "zmk,behavior-tap-dance";
                 #binding-cells = <0>;
                 tapping-term-ms = <50>;
-                bindings = <&kp Z>, ___, <&kp de_eszett>;
+                bindings = <&kp Z>, <&kp de_eszett>;
             };
 
     tdq: tap_dance_q {
