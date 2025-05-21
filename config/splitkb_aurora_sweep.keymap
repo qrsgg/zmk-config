@@ -49,28 +49,28 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <50>;
-            bindings = <&kp A>, <&kp de_ae>;
+            bindings = <&kp A>, <&de_ae>;
         };
 
     tdu: tap_dance_u {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <50>;
-            bindings = <&kp U>, <&kp de_ue>;
+            bindings = <&kp U>, <&de_ue>;
         };
 
     tdo: tap_dance_o {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <50>;
-            bindings = <&kp O>, <&kp de_oe>;
+            bindings = <&kp O>, <&de_oe>;
         };
 
     tdz: tap_dance_z {
                 compatible = "zmk,behavior-tap-dance";
                 #binding-cells = <0>;
                 tapping-term-ms = <50>;
-                bindings = <&kp Z>, <&kp de_eszett>;
+                bindings = <&kp Z>, <&de_eszett>;
             };
 
     tdq: tap_dance_q {
@@ -135,9 +135,9 @@ keymap {
 
     CONTROL { bindings = <
         //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-            &kp LC(Q)     &kp LC(W)     &kp LC(E)     &kp LC(R)     &kp LC(LPAR)    &kp LC(RPAR)  &kp de_ue     ___           &kp de_oe     ___
+            &kp LC(Q)     &kp LC(W)     &kp LC(E)     &kp LC(R)     &kp LC(LPAR)    &kp LC(RPAR)  &none     ___           &none     ___
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-            &kp de_ae     &kp LC(S)     &kp LC(D)     &kp LC(F)     &kp LC(LBKT)    &kp LC(LBKT)  ___           ___           ___           ___
+            &none     &kp LC(S)     &kp LC(D)     &kp LC(F)     &kp LC(LBKT)    &kp LC(LBKT)  ___           ___           ___           ___
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
             ___           ___           &kp LC(V)     &kp LC(C)     &kp LC(LBRC)    &kp LC(LBRC)  ___           &kp LGUI      ___           ___
         //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
