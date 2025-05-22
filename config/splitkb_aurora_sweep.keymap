@@ -24,14 +24,14 @@
 
 &lt {  // layer-tap config
     flavor = "balanced";
-    tapping-term-ms = <200>;
-    quick-tap-ms = <150>;
+    tapping-term-ms = <50>;
+    quick-tap-ms = <50>;
 };
 
 &mt {
     flavor = "tap-preferred";
-    tapping-term-ms = <220>;
-    quick-tap-ms = <220>;
+    tapping-term-ms = <120>;
+    quick-tap-ms = <120>;
 };
 
 / {
@@ -53,40 +53,6 @@
             bindings = <&kp A>, <&de_ae>;
         };
 
-    tdu: tap_dance_u {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <50>;
-            bindings = <&kp U>, <&de_ue>;
-        };
-
-    tdo: tap_dance_o {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <50>;
-            bindings = <&kp O>, <&de_oe>;
-        };
-
-    tdz: tap_dance_z {
-                compatible = "zmk,behavior-tap-dance";
-                #binding-cells = <0>;
-                tapping-term-ms = <50>;
-                bindings = <&kp Z>, <&de_eszett>;
-            };
-
-    tdq: tap_dance_q {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <50>;
-            bindings = <&kp Q>, <&kp ESC>;
-        };
-
-    tddollar: tap_dance_dollar {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <50>;
-            bindings = <&kp DOLLAR>, <&de_euro>;
-        };
 
 };
 
@@ -110,16 +76,16 @@ keymap {
 
     DEFAULT { bindings = <
         //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-            &tdq          &kp W         &kp E         &kp R         &kp T           &kp Y         &tdu          &kp I         &tdo          &kp P
+            &kp Q         &kp W         &kp E         &kp R         &kp T           &kp Y         &kp U          &kp I         &kp O          &kp P
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-            &tda          &mt LALT S    &lt 3 D       &mt LCTRL F   &kp G           &kp H         &mt LCTRL J   &kp K         &mt LALT L    &mt RSHFT ENTER
+            &kp A         &mt LALT S    &lt 3 D       &mt LCTRL F   &kp G           &kp H         &mt LCTRL J   &kp K         &mt LALT L    &mt RSHFT ENTER
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-            &tdz          &kp X         &kp V         &kp C         &kp TAB         &kp B         &kp N         &mt LGUI M    &kp COMMA     &kp DOT
+            &kp Z         &kp X         &kp V         &kp C         &kp TAB         &kp B         &kp N         &mt LGUI M    &kp COMMA     &kp DOT
         //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
                                                       &sl 1         &sk LSHFT       &lt 4 SPACE   &sl 1
         //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
 >;};
-    SYM { bindings = <
+    SYM { bindings =
         //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
             &kp AT        &kp DOLLAR    &kp TILDE     &kp CARET     &kp LPAR        &kp RPAR      &kp PLUS      &kp UNDER     &kp GRAVE     &kp FSLH
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
@@ -127,15 +93,15 @@ keymap {
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
             &kp BSLH      &kp POUND     &kp QMARK     &kp PERCENT   &kp LBRC        &kp RBRC      &kp MINUS     &kp EXCL      &kp SEMI      &kp STAR
         //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
-                                                      &sl 2         ___             ___           ___
+                                                      &sl 2         ___             ___           &kp K_MENU
         //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
 >;};
 
     CONTROL { bindings = <
         //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-            &kp LC(Q)     &kp LC(W)     &kp LC(E)     &kp LC(R)     &kp LC(LPAR)    &kp LC(RPAR)  &none     ___           &none     ___
+            &kp ESC       &none         &de_euro      &kp LC(R)     &kp LC(LPAR)    &kp LC(RPAR)  &de_ue          ___         &de_ae     ___
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-            &none     &kp LC(S)     &kp LC(D)     &kp LC(F)     &kp LC(LBKT)    &kp LC(LBKT)  ___           ___           ___           ___
+            &de_ae        &de_eszett    &none         &kp LC(F)     &kp LC(LBKT)    &kp LC(LBKT)  ___           ___           ___           ___
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
             ___           ___           &kp LC(V)     &kp LC(C)     &kp LC(LBRC)    &kp LC(LBRC)  ___           &kp LGUI      ___           ___
         //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
