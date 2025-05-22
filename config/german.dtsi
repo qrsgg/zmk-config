@@ -7,7 +7,9 @@
          wait-ms = <30>;
          tap-ms = <30>;
          bindings = <
-         &macro_tap &kp RWIN &kp DQUOTE &kp A
+            &macro_tap &kp RWIN
+            &macro_tap &kp DQUOTE
+            &macro_tap &kp A
          >;
       };
 
@@ -18,7 +20,10 @@
          wait-ms = <30>;
          tap-ms = <30>;
          bindings = <
-         &macro_tap &kp RWIN &kp DQUOTE &kp O
+         bindings = <
+            &macro_tap &kp RWIN
+            &macro_tap &kp DQUOTE
+            &macro_tap &kp O
          >;
       };
 
@@ -29,8 +34,11 @@
          wait-ms = <30>;
          tap-ms = <30>;
          bindings = <
-         &macro_tap &kp RWIN &kp DQUOTE &kp U
+            &macro_tap &kp RWIN
+            &macro_tap &kp DQUOTE
+            &macro_tap &kp U
          >;
+
       };
 
       de_eszett: unicode_sz {
@@ -40,7 +48,9 @@
          wait-ms = <30>;
          tap-ms = <30>;
          bindings = <
-         &macro_tap &kp RWIN &kp S &kp S
+            &macro_tap &kp RWIN
+            &macro_tap &kp S
+            &macro_tap &kp S
          >;
       };
 
@@ -51,7 +61,9 @@
          wait-ms = <30>;
          tap-ms = <30>;
          bindings = <
-         &macro_tap &kp RWIN &kp EQUAL &kp E
+            &macro_tap &kp RWIN
+            &macro_tap &kp EQUAL
+            &macro_tap &kp E
          >;
       };
    };
