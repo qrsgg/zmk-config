@@ -8,7 +8,7 @@
          tap-ms = <30>;
          bindings = <
             &macro_tap &kp RWIN
-            &macro_tap &kp DQUOTE
+            &macro_tap &kp DQT
             &macro_tap &kp A
          >;
       };
@@ -22,7 +22,7 @@
          bindings = <
          bindings = <
             &macro_tap &kp RWIN
-            &macro_tap &kp DQUOTE
+            &macro_tap &kp DQT
             &macro_tap &kp O
          >;
       };
@@ -35,7 +35,7 @@
          tap-ms = <30>;
          bindings = <
             &macro_tap &kp RWIN
-            &macro_tap &kp DQUOTE
+            &macro_tap &kp DQT
             &macro_tap &kp U
          >;
 
