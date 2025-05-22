@@ -10,7 +10,6 @@
          &macro_press   &kp LCTRL &kp LSHIFT
          &macro_tap     &kp U &kp N0 &kp N0 &kp E &kp N4
          &macro_release &kp LCTRL &kp LSHIFT
-         &kp ENTER
          >;
       };
 
@@ -24,7 +23,6 @@
          &macro_press   &kp LCTRL &kp LSHIFT
          &macro_tap     &kp U &kp N0 &kp N0 &kp F &kp N6
          &macro_release &kp LCTRL &kp LSHIFT
-         &kp ENTER
          >;
       };
 
@@ -38,7 +36,6 @@
          &macro_press   &kp LCTRL &kp LSHIFT
          &macro_tap     &kp U &kp N0 &kp N0 &kp F &kp C
          &macro_release &kp LCTRL &kp LSHIFT
-         &kp ENTER
          >;
       };
 
@@ -52,7 +49,6 @@
          &macro_press   &kp LCTRL &kp LSHIFT
          &macro_tap     &kp U &kp N0 &kp N0 &kp D &kp F
          &macro_release &kp LCTRL &kp LSHIFT
-         &kp ENTER
          >;
       };
 
@@ -66,7 +62,6 @@
          &macro_press   &kp LCTRL &kp LSHIFT
          &macro_tap     &kp U &kp N2 &kp N0 &kp A &kp C
          &macro_release &kp LCTRL &kp LSHIFT
-         &kp ENTER
          >;
       };
    };

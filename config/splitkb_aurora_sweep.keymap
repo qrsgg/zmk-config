@@ -13,25 +13,25 @@
 
 #define ___ &none
 
-&sk {  // sticky-key config
-    release-after-ms = <450>;  // release after 0.6s
-    quick-release;             // no double capitalization when rolling keys
+&sk {                           // sticky-key config
+    release-after-ms = <450>;   // release after 0.6s
+    quick-release;              // no double capitalization when rolling keys
 };
 
-&sl {  // sticky-layer config
-    ignore-modifiers;          // allow chording sticky mods & layers
+&sl {                           // sticky-layer config
+    ignore-modifiers;           // allow chording sticky mods & layers
 };
 
 &lt {  // layer-tap config
     flavor = "balanced";
-    tapping-term-ms = <50>;
-    quick-tap-ms = <50>;
+    tapping-term-ms = <200>;
+    quick-tap-ms = <200>;
 };
 
 &mt {
     flavor = "tap-preferred";
-    tapping-term-ms = <120>;
-    quick-tap-ms = <120>;
+    tapping-term-ms = <100>;
+    quick-tap-ms = <100>;
 };
 
 / {
@@ -93,13 +93,13 @@ keymap {
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
             &kp BSLH      &kp POUND     &kp QMARK     &kp PERCENT   &kp LBRC        &kp RBRC      &kp MINUS     &kp EXCL      &kp SEMI      &kp STAR
         //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
-                                                      &sl 2         ___             ___           &kp K_MENU
+                                                      &sl 2         ___             &kp C_MENU    ___
         //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
 >;};
 
     CONTROL { bindings = <
         //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-            &kp ESC       &none         &de_euro      &kp LC(R)     &kp LC(LPAR)    &kp LC(RPAR)  &de_ue          ___         &de_ae     ___
+            &kp ESC       &none         &de_euro      &kp LC(R)     &kp LC(LPAR)    &kp LC(RPAR)  &de_ue          ___         &de_oe     ___
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
             &de_ae        &de_eszett    &none         &kp LC(F)     &kp LC(LBKT)    &kp LC(LBKT)  ___           ___           ___           ___
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
