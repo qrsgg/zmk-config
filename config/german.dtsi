@@ -1,32 +1,58 @@
-de_AE: unicode_AE {
-   compatible = "zmk,behavior-macro";
-   label = "Ä";
-   #binding-cells = <0>;
-   wait-ms = <30>;
-   tap-ms = <30>;
-   bindings = <
-   &macro_tap &kp RWIN &kp DQUOTE &kp A
-   >;
-};
+/ {
+   macros {
+      de_ae: unicode_ae {
+         compatible = "zmk,behavior-macro";
+         label = "ä";
+         #binding-cells = <0>;
+         wait-ms = <30>;
+         tap-ms = <30>;
+         bindings = <
+         &macro_tap &kp RWIN &kp DQUOTE &kp A
+         >;
+      };
 
-de_OE: unicode_OE {
-   compatible = "zmk,behavior-macro";
-   label = "Ö";
-   #binding-cells = <0>;
-   wait-ms = <30>;
-   tap-ms = <30>;
-   bindings = <
-   &macro_tap &kp RWIN &kp DQUOTE &kp O
-   >;
-};
+      de_oe: unicode_oe {
+         compatible = "zmk,behavior-macro";
+         label = "ö";
+         #binding-cells = <0>;
+         wait-ms = <30>;
+         tap-ms = <30>;
+         bindings = <
+         &macro_tap &kp RWIN &kp DQUOTE &kp O
+         >;
+      };
 
-de_UE: unicode_UE {
-   compatible = "zmk,behavior-macro";
-   label = "Ü";
-   #binding-cells = <0>;
-   wait-ms = <30>;
-   tap-ms = <30>;
-   bindings = <
-   &macro_tap &kp RWIN &kp DQUOTE &kp U
-   >;
+      de_ue: unicode_ue {
+         compatible = "zmk,behavior-macro";
+         label = "ü";
+         #binding-cells = <0>;
+         wait-ms = <30>;
+         tap-ms = <30>;
+         bindings = <
+         &macro_tap &kp RWIN &kp DQUOTE &kp U
+         >;
+      };
+
+      de_eszett: unicode_sz {
+         compatible = "zmk,behavior-macro";
+         label = "ß";
+         #binding-cells = <0>;
+         wait-ms = <30>;
+         tap-ms = <30>;
+         bindings = <
+         &macro_tap &kp RWIN &kp S &kp S
+         >;
+      };
+
+      de_euro: unicode_euro {
+         compatible = "zmk,behavior-macro";
+         label = "€";
+         #binding-cells = <0>;
+         wait-ms = <30>;
+         tap-ms = <30>;
+         bindings = <
+         &macro_tap &kp RWIN &kp EQUAL &kp E
+         >;
+      };
+   };
 };
