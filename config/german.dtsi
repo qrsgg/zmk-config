@@ -20,7 +20,6 @@
          wait-ms = <30>;
          tap-ms = <30>;
          bindings = <
-         bindings = <
             &macro_tap &kp RWIN
             &macro_tap &kp DQT
             &macro_tap &kp O
