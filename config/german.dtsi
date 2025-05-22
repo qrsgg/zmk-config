@@ -4,12 +4,10 @@
          compatible = "zmk,behavior-macro";
          label = "ä";
          #binding-cells = <0>;
-         wait-ms = <40>;
-         tap-ms = <40>;
+         wait-ms = <30>;
+         tap-ms = <30>;
          bindings = <
-         &macro_press   &kp LCTRL &kp LSHIFT
-         &macro_tap     &kp U &kp N0 &kp N0 &kp E &kp N4
-         &macro_release &kp LCTRL &kp LSHIFT
+         &macro_tap &kp RWIN &kp DQUOTE &kp A
          >;
       };
 
@@ -17,12 +15,10 @@
          compatible = "zmk,behavior-macro";
          label = "ö";
          #binding-cells = <0>;
-         wait-ms = <40>;
-         tap-ms = <40>;
+         wait-ms = <30>;
+         tap-ms = <30>;
          bindings = <
-         &macro_press   &kp LCTRL &kp LSHIFT
-         &macro_tap     &kp U &kp N0 &kp N0 &kp F &kp N6
-         &macro_release &kp LCTRL &kp LSHIFT
+         &macro_tap &kp RWIN &kp DQUOTE &kp O
          >;
       };
 
@@ -30,12 +26,10 @@
          compatible = "zmk,behavior-macro";
          label = "ü";
          #binding-cells = <0>;
-         wait-ms = <40>;
-         tap-ms = <40>;
+         wait-ms = <30>;
+         tap-ms = <30>;
          bindings = <
-         &macro_press   &kp LCTRL &kp LSHIFT
-         &macro_tap     &kp U &kp N0 &kp N0 &kp F &kp C
-         &macro_release &kp LCTRL &kp LSHIFT
+         &macro_tap &kp RWIN &kp DQUOTE &kp U
          >;
       };
 
@@ -43,12 +37,43 @@
          compatible = "zmk,behavior-macro";
          label = "ß";
          #binding-cells = <0>;
-         wait-ms = <40>;
-         tap-ms = <40>;
+         wait-ms = <30>;
+         tap-ms = <30>;
          bindings = <
-         &macro_press   &kp LCTRL &kp LSHIFT
-         &macro_tap     &kp U &kp N0 &kp N0 &kp D &kp F
-         &macro_release &kp LCTRL &kp LSHIFT
+         &macro_tap &kp RWIN &kp S &kp S
+         >;
+      };
+
+      de_AE: unicode_AE {
+         compatible = "zmk,behavior-macro";
+         label = "Ä";
+         #binding-cells = <0>;
+         wait-ms = <30>;
+         tap-ms = <30>;
+         bindings = <
+         &macro_tap &kp RWIN &kp DQUOTE &kp LS(A)
+         >;
+      };
+
+      de_OE: unicode_OE {
+         compatible = "zmk,behavior-macro";
+         label = "Ö";
+         #binding-cells = <0>;
+         wait-ms = <30>;
+         tap-ms = <30>;
+         bindings = <
+         &macro_tap &kp RWIN &kp DQUOTE &kp LS(O)
+         >;
+      };
+
+      de_UE: unicode_UE {
+         compatible = "zmk,behavior-macro";
+         label = "Ü";
+         #binding-cells = <0>;
+         wait-ms = <30>;
+         tap-ms = <30>;
+         bindings = <
+         &macro_tap &kp RWIN &kp DQUOTE &kp LS(U)
          >;
       };
 
@@ -56,12 +81,10 @@
          compatible = "zmk,behavior-macro";
          label = "€";
          #binding-cells = <0>;
-         wait-ms = <40>;
-         tap-ms = <40>;
+         wait-ms = <30>;
+         tap-ms = <30>;
          bindings = <
-         &macro_press   &kp LCTRL &kp LSHIFT
-         &macro_tap     &kp U &kp N2 &kp N0 &kp A &kp C
-         &macro_release &kp LCTRL &kp LSHIFT
+         &macro_tap &kp RWIN &kp EQUAL &kp E
          >;
       };
    };
