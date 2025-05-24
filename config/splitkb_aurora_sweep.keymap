@@ -59,32 +59,32 @@
         };
         combo_LBKT {
             timeout-ms = <100>;
-            key-positions = <3 4>;
+            key-positions = <2 3>;
             bindings = <&kp LBKT>;
         };
         combo_LPAR {
             timeout-ms = <100>;
-            key-positions = <13 14>;
+            key-positions = <12 13>;
             bindings = <&kp LPAR>;
         };
         combo_LBRC {
             timeout-ms = <100>;
-            key-positions = <23 24>;
+            key-positions = <22 23>;
             bindings = <&kp LBRC>;
         };
         combo_RBKT {
             timeout-ms = <100>;
-            key-positions = <6  5>;
+            key-positions = <7 6>;
             bindings = <&kp RBKT>;
         };
         combo_RPAR {
             timeout-ms = <100>;
-            key-positions = <16  15>;
+            key-positions = <17 16>;
             bindings = <&kp RPAR>;
         };
         combo_RBRC {
             timeout-ms = <100>;
-            key-positions = <26  25>;
+            key-positions = <27 26>;
             bindings = <&kp RBRC>;
         };
 
