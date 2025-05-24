@@ -52,37 +52,37 @@
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
-        combo_esc {
+        combo_esc2 {
             timeout-ms = <100>;
             key-positions = <8 9>;
             bindings = <&kp ESC>;
         };
-        combo_esc {
+        combo_LBKT {
             timeout-ms = <100>;
             key-positions = <3 4>;
             bindings = <&kp LBKT>;
         };
-        combo_esc {
+        combo_LPAR {
             timeout-ms = <100>;
             key-positions = <13 14>;
             bindings = <&kp LPAR>;
         };
-        combo_esc {
+        combo_LBRC {
             timeout-ms = <100>;
             key-positions = <23 24>;
             bindings = <&kp LBRC>;
         };
-        combo_esc {
+        combo_RBKT {
             timeout-ms = <100>;
             key-positions = <6  5>;
             bindings = <&kp RBKT>;
         };
-        combo_esc {
+        combo_RPAR {
             timeout-ms = <100>;
             key-positions = <16  15>;
             bindings = <&kp RPAR>;
         };
-        combo_esc {
+        combo_RBRC {
             timeout-ms = <100>;
             key-positions = <26  25>;
             bindings = <&kp RBRC>;
